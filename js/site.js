@@ -5,19 +5,17 @@ function getValues() {
   let buzzValue = document.getElementById("buzzValue").value;
 
   //validate the input values (parse to check the values are numbers)
-  //check to make sure the values are integers
   fizzValue = parseInt(fizzValue);
   buzzValue = parseInt(buzzValue);
 
+  //check to make sure the values are integers
   if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue)) {
-    let numbers = generateNumbers(fizzValue, buzzValue);
-    displayNumbers(numbers);
+    //call fizzBuzz
+    let fbArray = fizzBuzz(fizzValue, buzzValue);
+    //call displayData
   } else {
     alert("You must enter numbers");
   }
-
-  //call fizzBuzz
-  //call displayData
 }
 
 function fizzBuzz(fizzValue, buzzValue) {
@@ -25,18 +23,23 @@ function fizzBuzz(fizzValue, buzzValue) {
   let returnArray = [];
 
   //loop from 1-100
-  for (let i = fizzValue; i <= buzzValue; i++) {
-    number.push(i);
+  for (let i = 1; i <= 100; i++) {
+    //check current value in three steps
+
+    // 1. Divisible by both 3 and 5 push 'FizzBuzz' into array
+    if (i % fizzValue == 0 && i % buzzValue == 0) {
+      returnArray.push("FizzBuzz");
+      // 2. Divisible by 3 push 'Fizz' into array
+    } else if (i % fizzValue == 0) {
+      returnArray.push("Fizz");
+      // 3. Divisible by 5 push 'Buzz' into array
+    } else if (i % buzzValue == 0) {
+      returnArray.push("Buzz");
+      //if none of the above are true push the number into array
+    } else {
+      returnArray.push(i);
+    }
   }
-  return numbers;
-
-  //check current value in three steps
-  // 1. Divisible by both 3 and 5 push 'FizzBuzz' into array
-  // 2. Divisible by 3 push 'Fizz' into array
-  // 3. Divisible by 5 push 'Buzz' into array
-
-  //if none of the above are true push number into array
-
   //return the array
   returnArray;
 }
