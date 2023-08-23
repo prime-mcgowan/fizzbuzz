@@ -1,0 +1,144 @@
+main > .container {
+  padding: 60px 15px 0;
+  margin-bottom: 5rem;
+}
+.sticky-footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+:root {
+  --primary-color: #1d5888;
+  --secondary-color: #ff993b;
+  --dark-color: #292929;
+  --white-color: #e7e7e7;
+}
+
+body {
+  color: var(--dark-color);
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.nav-link-custom {
+  font-size: 25px;
+}
+
+.nav-link-custom-brand {
+  font-size: 30px;
+  padding-bottom: 12px;
+}
+
+nav {
+  background-color: var(--dark-color);
+}
+
+footer {
+  background-color: var(--dark-color);
+}
+
+h1 {
+  color: #a1cad0;
+  /* color:#DE5859 */
+}
+
+h4 {
+  color: #de5859;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h5,
+h6 {
+  color: var(--black-color);
+}
+
+span {
+  font-style: italic;
+}
+
+.btn {
+  color: #de5859;
+}
+
+footer {
+  padding-right: 1rem;
+}
+
+.underline {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.email {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+}
+
+.email:hover {
+  text-decoration: none;
+  opacity: 0.9;
+  color: #f611ae;
+}
+
+footer .social > a {
+  color: var(--white-color);
+  opacity: 0.75;
+}
+
+footer .social > a:hover {
+  /* opacity: 0.9; */
+  color: #f611ae;
+  /* color: var(--secondary-color); */
+}
+
+.bsicon {
+  color: #7211f5;
+}
+
+.jsicon {
+  color: #f7df1c;
+}
+
+.html5icon {
+  color: #fd5602;
+}
+
+.cssicon {
+  color: #2965f1;
+}
+
+.mt-10 {
+  margin-top: 10rem;
+}
+
+.my-input {
+  border: 2px solid #a1cad0;
+}
+
+.form-control:focus {
+  border-color: #a1cad0;
+  box-shadow: 0 0 0 0.25rem #a1cad0;
+}
+
+.alert-danger {
+  color: #df4d4d;
+}
+
+/* controls checklist color */
+/* .checklist >li i{
+      color: var(--secondary-color)
+  } */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
