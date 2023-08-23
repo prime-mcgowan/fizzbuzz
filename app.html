@@ -86,7 +86,70 @@
 
     <!-- Main Section -->
     <main class="flex-shrink-0">
-      <div class="containter"></div>
+      <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col col-lg-4 border-end border-2">
+            <h1>
+              <span class="title">FizzBuzz:</span> A JavaScript Coding Challenge
+            </h1>
+            <h4 class="lead">
+              Write a program that prints the numbers from 1-100 and for
+              multiples of '3' displays "Fizz" instead of the numbersand for and
+              for multiples of '5' displays "Buzz". If the number is a multiple
+              of both display "FizzBuzz".
+            </h4>
+            <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+            <p>
+              Enter a starting number and an ending number. Press the button to
+              see FizzBuzz appear.
+            </p>
+          </div>
+          <div class="col col-lg-8">
+            <div>
+              <h5>Enter Numbers</h5>
+              <form class="row gy-2 gx-3">
+                <div class="col">
+                  <input
+                    id="fizzValue"
+                    type="number"
+                    class="form-control"
+                    placeholder="Fizz Value"
+                    value="3"
+                    aria-label="Fizz Value"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    id="buzzValue"
+                    type="number"
+                    class="form-control"
+                    placeholder="Ending Number"
+                    value="5"
+                    aria-label="Buzz Value"
+                  />
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button
+                    id="btnSubmit"
+                    type="button"
+                    class="btn btn-dark btn-lg"
+                  >
+                    Go!!
+                  </button>
+                </div>
+              </form>
+              <h2 class="mt-5 border-bottom border-2">Results</h2>
+              <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                  <tbody id="results">
+                    <!-- results go here: -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer Section -->
@@ -136,5 +199,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/site.js"></script>
+    <script>
+      document.getElementById("btnSubmit").addEventListener("click", getValues);
+    </script>
   </body>
 </html>
