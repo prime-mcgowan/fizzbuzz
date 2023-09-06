@@ -42,12 +42,12 @@ footer {
 }
 
 h1 {
-  color: #a1cad0;
+  color: #6cd108;
   /* color:#DE5859 */
 }
 
 h4 {
-  color: #de5859;
+  color: #974be3;
   font-weight: bold;
 }
 
@@ -63,7 +63,8 @@ span {
 }
 
 .btn {
-  color: #de5859;
+  color: #6cd108;
+  font-weight: bold;
 }
 
 footer {
@@ -132,15 +133,15 @@ footer .social > a:hover {
 }
 
 .Fizz {
-  color: darkgreen;
+  color: #6cd108;
 }
 
 .Buzz {
-  color: darkblue;
+  color: #974be3;
 }
 
 .FizzBuzz {
-  color: red;
+  color: black;
   font-weight: bold;
 }
 
